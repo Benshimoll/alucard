@@ -1,0 +1,35 @@
+@import url('style.css');
+@import url('style2.css');
+
+@font-face {
+    font-family: "lavish";
+    src: url("../fonts/LavishlyYours.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "story";
+    src: url("../fonts/StoryScript.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "singlet";
+    src: url("../fonts/Sniglet.woff2") format("woff2");
+}
+
+@keyframes temblar {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-3px, 1px) rotate(-1deg); }
+    40% { transform: translate(3px, -1px) rotate(1deg); }
+    60% { transform: translate(-3px, -1px) rotate(-1deg); }
+    80% { transform: translate(3px, 1px) rotate(1deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes parpadeo {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+:root {
+    --bg: #ffe7e7da;
+}

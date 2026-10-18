@@ -1,0 +1,149 @@
+html, body {
+    background-color: var(--bg);
+    font-family: 'lavish', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: background-color 1s ease-in-out;
+}
+
+.apodos {
+    font-family: 'story', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 100px;
+    color: #ff7a7a;
+    text-shadow: rgb(184, 255, 251) 3px 3px 0px;
+    letter-spacing: 1px;
+    gap: 20px;
+    background-color: var(--bg);
+    width: 100%;
+    height: fit-content;
+}
+
+.apodos p {
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1.5s ease-in, translate .8s cubic-bezier(0.175, 0.885, 0.32, 1.275), transform ease-in-out 1s;
+}
+
+.text1 {
+    top: 10px;
+    left: 70px;
+    transform: rotate(20deg);
+}
+
+.text2 {
+    top: 60px;
+    left: 120px;
+    color: rgb(184, 255, 251);
+    text-shadow: #ff7a7a 3px 3px 0px;
+    transform: rotate(-10deg);
+}
+
+.text3 {
+    top: 500px;
+    left: 110px;
+    transform: rotate(-60deg);
+}
+
+.text4 {
+    top: 500px;
+    left: 90px;
+    color: rgb(184, 255, 251);
+    text-shadow: #ff7a7a 3px 3px 0px;
+    transform: rotate(-30deg);
+}
+
+.text5 {
+    top: 450px;
+    left: 70px;
+    transform: rotate(30deg);
+}
+
+.text6 {
+    top: 150px;
+    left: 90px;
+    transform: rotate(-30deg);
+}
+
+.text7 {
+    top: 290px;
+    left: 90px;
+    color: rgb(184, 255, 251);
+    text-shadow: #ff7a7a 3px 3px 0px;
+    transform: rotate(46deg);
+}
+
+.text8 {
+    top: 200px;
+    left: 230px;
+    transform: rotate(-15deg);
+}
+
+.text9 {
+    top: 300px;
+    left: 70px;
+    transform: rotate(5deg);
+}
+
+.text10 {
+    bottom: 120px;
+    left: 40px;
+    color: rgb(184, 255, 251);
+    text-shadow: #ff7a7a 3px 3px 0px;
+    transform: rotate(24deg);
+}
+
+.text11 {
+    bottom: 30px;
+    left: 60px;
+    transform: rotate(0deg);
+}
+
+.candado-container {
+    display: flex;
+    justify-self: center;
+    position: absolute;
+    top: 300px;
+    left: 140px;
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+
+.candado {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 50px;
+    border: none;
+    background-color: transparent;
+    animation: temblar .9s infinite;
+    transition: animation .5s ease-in-out, scale 1s ease-in-out;
+}
+
+.candado img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    transition: opacity .8s ease-in-out;
+}
+
+#img-unlock {
+    opacity: 0;
+}
